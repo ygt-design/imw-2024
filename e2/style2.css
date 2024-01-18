@@ -1,0 +1,77 @@
+body {
+    background-color: #d4d1f5;
+}
+
+/* PAINTING TWO PROPERTIES */
+.painting-2 {
+    display: grid;
+    width: 600px;
+    height: 600px;
+
+    border: 1px solid black; 
+
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+/* SQUARES */
+.lightBlue {
+    background-color: #62B7E6;
+}
+
+.black {
+    background-color: #25262F;
+}
+
+.lightGreen {
+    background-color: #DBEECA;
+}
+
+.yellow {
+    background-color: #F5C548;
+}
+
+.green {
+    background-color: #53A476;
+}
+
+.blue {
+    background-color: #3B83DE;
+}
+
+.pink {
+    background-color: #F7DBD6;
+}
+
+.darkBlue {
+    background-color: #1F46BB;
+}
+
+.red {
+    background-color: #E0544C;
+}
+
+.orange {
+    background-color: #EB744D;
+}
+
+/* LINES */
+.border-top {
+    border-top: 10px solid #62B7E6;
+}
+
+.yellow-line {
+    border-bottom: 20px solid #F5C548;
+}
+
+.red-line {
+    border-bottom: 20px solid #D64B43;
+}
+
+.orange-line {
+    border-bottom: 20px solid #EB744D;
+}
+
+.blue-line {
+    border-right: #1F46BB;
+}
