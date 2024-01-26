@@ -1,0 +1,282 @@
+/* BACKGROUND */
+:root {
+    /* --background-color: #d4d1f5; */
+    --orange-fur-color: #ebb97f;
+    background-image: linear-gradient(to bottom, black, darkred);
+  }
+  
+  body{
+    background: var(--background-color);
+  }
+  
+  /* TYPOGRAPHY */
+  h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred;
+  }
+  h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred;
+  }
+  h3 {
+    color: black;
+  }
+    /* CALL TO ACTION*/
+  .boop {
+    position: absolute;
+    bottom: 70px;
+    left: 620px;
+  }
+  
+
+  /* SHIBA INU */
+  .box-canvas{
+    position: relative;
+    top: -60px;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 600px;
+    height:600px;
+    background: var(--background-color);
+  }
+  
+  /* Shared ear styles - container to create rounded top */
+  .ear {
+    position: absolute;
+    top: 90px;
+    height: 160px;
+    width: 140px;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+    background: var(--background-color);
+  }
+  
+  .left-ear {
+    left: 140px;
+    transform: rotate(-20deg);
+  }
+  
+  .right-ear {
+    right: 140px;
+    transform: rotate(20deg);
+  }
+  
+  /* Shared main orange outer ear styles */
+  .ear::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    background: var(--orange-fur-color);
+    width: 130%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .left-ear::before {
+    left: -25px;
+  }
+  
+  .right-ear::before {
+    right: -25px;
+  }
+  
+  /* Shared ear styles for inner pink */
+  .ear::after {
+    content: '';
+    bottom: 10px;
+    position: absolute;
+    background: pink;
+    width: 95%;
+    height: 80%;
+    clip-path: polygon(49% 0, 6% 100%, 100% 100%);
+  }
+  
+  .left-ear::after {
+    right: 8px;
+  }
+  
+  .right-ear::after {
+    left: 5px;
+  }
+  
+  /* Main head */
+  .head {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    background: white;
+    width: 300px;
+    height: 275px;
+    border-radius: 45%;
+    overflow: hidden;
+  }
+  
+  /* Left color patch */
+  .head::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: var(--orange-fur-color);
+    width: 70%;
+    height: 60%;
+    border-radius: 0 0 50% 0;
+  }
+  
+  /* Right color patch */
+  .head::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    background: var(--orange-fur-color);
+    width: 70%;
+    height: 60%;
+    border-radius: 0 50 0 50%;
+  }
+  .left-cheek {
+    position: absolute;
+    left: 150px;
+    top: 280px;
+    width: 120px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+  }
+  .right-cheek {
+    position: absolute;
+    left: 330px;
+    top: 280px;
+    width: 120px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  /* Shared eye styles */
+  .eye {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background: black;
+    top: 240px;
+    /* border-radius: 50%; */
+  } 
+  
+  .left-eye {
+    left: 220px;
+  }
+  
+  .right-eye {
+    right: 220px;
+  }
+  
+  /* White snout section */
+  .snout {
+    position: absolute;
+    left: 225px;
+    top: 250px;
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  /* Nose */
+  .snout::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 50px;
+    height: 30px;
+    background: black;
+    border-radius: 30% 30% 50% 50%;
+  }
+
+.mouth {
+    width: 60px;
+    height: 7px;
+    background-color: black;
+    border-radius: 30%;
+    position: absolute;
+    top: 330px;
+    left: 270px;
+    
+}
+
+  /* Mouth curl - right */
+  .tongue::after {
+    content: '';
+    position: absolute;
+    top: -29px;
+    right: -34px;
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 0px 0px black;
+    background: white;
+  }
+    /* eyebrows */
+  .left-eyebrow {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: white;
+    top: 190px;
+    left: 220px;
+    border-radius: 50%;
+  }
+  .right-eyebrow {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: white;
+    top: 190px;
+    left: 340px;
+    border-radius: 50%;
+  }
+
+/* FEDORA */
+.topHat{
+    position:absolute;
+    top: 170px;
+    left: 610px;
+  }
+  .topLeft{
+    width: 90px;
+    height: 100px;
+    background: rgb(90, 64, 18);
+    position:absolute;
+    left: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .topRight{
+    width: 90px;
+    height: 100px;
+    /* background: rgb(59, 40, 7); */
+    background-image: linear-gradient(to bottom, rgb(59, 40, 7),rgb(90, 64, 18));
+    position:absolute;
+    left: 80px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .topRibbon{
+   width: 150px;
+    height: 30px;
+    background: #B8E9FF;
+    position:absolute;
+    top:100px;
+    left: 20px;
+  }
+  .topBrim{
+    width: 190px;
+    height: 30px;
+    background: rgb(90, 64, 18);
+    border-radius: 40%;
+    position:absolute;
+    top: 120px;
+  }
+
+  /* bow 2 */

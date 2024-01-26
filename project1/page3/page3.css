@@ -1,0 +1,434 @@
+/* BACKGROUND */
+:root {
+    background-image: linear-gradient(to bottom, #FDF4DC, #8EBAFF);
+    --orange-fur-color: #ebb97f;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #533a71;
+}
+h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #533a71;
+}
+h3 {
+  color: #533a71;
+}
+.callAction {
+  position: relative;
+  top: 610px;
+  left: 190px;
+}
+
+/* SHELVES */
+.shelf{
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+.shelf1 {
+  width: 600px;
+  height: 10px;
+  background: #72684d;
+  border-radius: 20px;
+  position: absolute;
+  top: 340px;
+  left: 15px;
+}
+.shelf2 {
+  width: 600px;
+  height: 10px;
+  background: #72684d;
+  border-radius: 20px;
+  position: absolute;
+  top: 600px;
+  left: 15px;
+}
+
+/* SHIBA INU */
+
+.container{
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  width: 600px;
+  height:600px;
+  background: var(--background-color);
+}
+    
+  /* Shared ear styles - container to create rounded top */
+.ear {
+  position: absolute;
+  top: 160px;
+  height: 160px;
+  width: 140px;
+  border-radius: 50% 50% 0 0;
+  overflow: hidden;
+  background: var(--background-color);
+}
+    
+.left-ear {
+  right: 390px;
+  transform: rotate(-20deg);
+}
+    
+.right-ear {
+  right: 210px;
+  transform: rotate(20deg);
+}
+    
+/* Shared main orange outer ear styles */
+.ear::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  background: var(--orange-fur-color);
+  width: 130%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+    
+.left-ear::before {
+  left: -25px;
+}
+    
+.right-ear::before {
+  right: -25px;
+}
+    
+/* Shared ear styles for inner pink */
+.ear::after {
+  content: '';
+  bottom: 10px;
+  position: absolute;
+  background: pink;
+  width: 95%;
+  height: 80%;
+  clip-path: polygon(49% 0, 6% 100%, 100% 100%);
+}
+    
+.left-ear::after {
+  right: 8px;
+}
+    
+.right-ear::after {
+  left: 5px;
+}
+    
+/* Main head */
+.head {
+  position: absolute;
+  right: 220px;
+  top: 230px;
+  background: white;
+  width: 300px;
+  height: 275px;
+  border-radius: 45%;
+  overflow: hidden;
+}
+    
+/* forehead */
+.head::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: var(--orange-fur-color);
+  width: 70%;
+  height: 60%;
+  border-radius: 0 0 50% 0;
+    }
+.head::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  background: var(--orange-fur-color);
+  width: 70%;
+  height: 60%;
+  border-radius: 0 50 0 50%;
+}
+.left-cheek {
+  position: absolute;
+  right: 400px;
+  top: 360px;
+  width: 120px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+}
+.right-cheek {
+  position: absolute;
+  right: 220px;
+  top: 360px;
+  width: 120px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+}
+    
+  /* Shared eye styles */
+.eye {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: black;
+  top: 310px;
+  border-radius: 50%;
+}
+    
+  /* Reflection in pupil */
+.eye::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  bottom: 20px;
+  left: 5px;
+}
+    
+.left-eye {
+  right: 410px;
+}
+    
+.right-eye {
+  right: 290px;
+}
+    
+  /* White snout section */
+.snout {
+  position: absolute;
+  right: 295px;
+  top: 340px;
+  width: 150px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+    
+  /* Nose */
+.snout::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 50px;
+  height: 30px;
+  background: black;
+  border-radius: 30% 30% 50% 50%;
+}
+    
+  /* Tongue */
+.tongue {
+  position: absolute;
+  right: 340px;
+  top: 430px;
+  background: pink;
+  width: 50px;
+  height: 50px;
+  border-radius: 0 0 50% 50%;
+}
+    
+  /* Mouth curl - left */
+.tongue::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 28px;
+  width: 60px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 0px 0px black;
+  background: white;
+}
+    
+  /* Mouth curl - right */
+.tongue::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 60px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 0px 0px black;
+  background: white;
+}
+  /* eyebrows */
+.right-eyebrow {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: white;
+  top: 280px;
+  right: 300px;
+  border-radius: 50%;
+}
+.left-eyebrow {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: white;
+  top: 280px;
+  right: 410px;
+  border-radius: 50%;
+}
+
+
+/* HATS */
+  /* top hat */
+.topHat{
+  position:absolute;
+  top: 190px;
+  left: 170px;
+}
+.topShaft{
+  width: 150px;
+  height: 100px;
+  background: black;
+  position:absolute;
+  left: 10px;
+  border-top-left-radius: 7%;
+  border-top-right-radius: 7%;
+}
+.topRibbon{
+ width: 150px;
+  height: 30px;
+  background: rgb(113, 37, 123);
+  position:absolute;
+  top:100px;
+  left: 10px;
+}
+.topBrim{
+  width: 170px;
+  height: 20px;
+  background: black;
+  border-radius: 10%;
+  position:absolute;
+  top: 130px;
+}
+
+  /* fedora */
+.fedora {
+  position:absolute;
+  top: 190px;
+  left: 420px;
+}
+.fedLeft{
+  width: 90px;
+  height: 100px;
+  background: rgb(90, 64, 18);
+  position:absolute;
+  left: 20px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.fedRight{
+  width: 90px;
+  height: 100px;
+  /* background: rgb(59, 40, 7); */
+  background-image: linear-gradient(to bottom, rgb(59, 40, 7),rgb(90, 64, 18));
+  position:absolute;
+  left: 80px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.fedRibbon{
+ width: 150px;
+  height: 30px;
+  background: #B8E9FF;
+  position:absolute;
+  top:100px;
+  left: 20px;
+}
+.fedBrim{
+  width: 190px;
+  height: 30px;
+  background: rgb(90, 64, 18);
+  border-radius: 40%;
+  position:absolute;
+  top: 120px;
+}
+
+  /* bow 1 */
+.bow1 {
+  position:absolute;
+  top: 545px;
+  left: 150px;
+}
+.circle1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    background: red;
+    position:absolute;
+    left: 50px;
+    top: 10px;
+  }
+.rightSide1{
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top: 0;
+  border-bottom: 60px solid greenyellow;
+  transform:rotate(90deg);
+  border-radius: 40%;
+  position: absolute;
+  top: 5px
+}
+.leftSide1{
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top: 0;
+  border-bottom: 60px solid blue;
+  transform:rotate(-90deg);
+  border-radius: 40%;
+  position: absolute;
+  left: 70px;
+  top: 5px;
+}
+  /* bow 2 */
+.bow2 {
+    position:absolute;
+    top: 545px;
+    left: 450px;
+}
+.circle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    background: #533a71;
+    position:absolute;
+    left: 50px;
+    top: 10px;
+  }
+.rightSide2{
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top: 0;
+  border-bottom: 60px solid #4b3467;
+  transform:rotate(90deg);
+  border-radius: 40%;
+  position: absolute;
+  top: 5px
+}
+.leftSide2{
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top: 0;
+  border-bottom: 60px solid #4b3467;
+  transform:rotate(-90deg);
+  border-radius: 40%;
+  position: absolute;
+  left: 70px;
+  top: 5px;
+}

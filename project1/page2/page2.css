@@ -1,0 +1,255 @@
+/* BACKGROUND */
+:root {
+  background-image: linear-gradient(to bottom, #d4d1f5, #8EBAFF);
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #533a71;
+}
+h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #533a71;
+}
+h3 {
+  color: #533a71;
+}
+.storeName {
+  position: absolute;
+  top: -2px;
+  left: 95px;
+}
+.clickDoor {
+  position: absolute;
+  top: 700px;
+  left: 550px;
+
+}
+
+/* CLOUDS */
+.cloud {
+	width: 350px; height: 100px;
+	
+	background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: absolute;
+    left: 30px;
+	margin: 120px auto 20px;
+}
+
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: #f2f9fe;
+	z-index: -1
+}
+
+.cloud:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.cloud:before {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
+.cloud-2 {
+	width: 350px; height: 100px;
+	
+	background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: absolute;
+	right: 63px;
+    top: 500px;
+
+}
+.cloud-2:after, .cloud-2:before {
+	content: '';
+	position: absolute;
+	background: #f2f9fe;
+	z-index: -1
+}
+
+.cloud-2:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.cloud-2:before {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
+
+/* STORE */
+  /* reference image: https://www.123rf.com/photo_93263070_coffee-shop-front-vector-illustration-on-flat-style-colorful-drawing-of-the-front-of-cafe-and.html */
+
+.container {
+  width: 400;
+  height: 400px;
+  position: absolute;
+  top: 300;
+  left: 500;
+}
+.land{
+  width: 900px;
+  height: 3px;
+  background: #72684d;
+  border-radius: 20px;
+  position: absolute;
+  top: 400px;
+  left: -230px;
+}
+.shop {
+  width: 400px;
+  height: 400px;
+  background: #FDF4DC;
+}
+.top {
+  width: 420px;
+  height: 70px;
+  background: #dfd4b6;
+  border: 10px solid #FDF4DC;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+.windowTop{
+  width: 200px;
+  height: 50px;
+  background: #d4d1f5;
+  position: absolute;
+  border: 5px solid #533a71;
+  top: 325px;
+  left: 30px;
+}
+.window{
+  width: 200px;
+  height: 140px;
+  /* background: #c0e6f5;#d4d1f5;#f2f9fe */
+  background: linear-gradient(to bottom, #f2f9fe, #c0e6f5);
+  position: absolute;
+  border: 5px solid #533a71;
+  top: 180px;
+  left: 30px;
+}
+
+.doorTop1{
+  width: 50px;
+  height: 50px;
+  background: #d4d1f5;
+  position: absolute;
+  border: 5px solid #533a71;
+  top: 325px;
+  left: 310px;
+}
+.doorTop2{
+  width: 50px;
+  height: 50px;
+  background: #d4d1f5;
+  position: absolute;
+  border: 5px solid #533a71;
+  top: 325px;
+  left: 260px;
+}
+.door1{
+  width: 50px;
+  height: 140px;
+  /* background: #c0e6f5; */
+  background: linear-gradient(to bottom, #f2f9fe, #c0e6f5);
+  position: absolute;
+  /* border: 5px solid #dfd4b6; */
+  border: 5px solid #533a71;
+  top: 180px;
+  left: 310px;
+}
+.door2{
+  width: 50px;
+  height: 140px;
+  /* background: #c0e6f5; */
+  background: linear-gradient(to bottom, #f2f9fe, #c0e6f5);
+  position: absolute;
+  /* border: 5px solid #dfd4b6; */
+  border: 5px solid #533a71;
+  top: 180px;
+  left: 260px;
+}
+.handle1 {
+  width: 5px;
+  height: 15px;
+  background: #533a71;
+  position: absolute;
+  top: 250px;
+  left: 300px;
+}
+.handle2 {
+  width: 5px;
+  height: 15px;
+  background: #533a71;
+  position: absolute;
+  top: 250px;
+  left: 330px;
+}
+.curtainTop {
+  width: 370px;
+  height: 10px;
+  background: #72684d;
+  border-radius: 20px;
+  position: absolute;
+  top: 84px;
+  left: 15px;
+}
+.curtain {
+  width: 360px;
+  height: 120px;
+  background: repeating-linear-gradient(to right, #d4d1f5, #d4d1f5 20px, #533a71 20px, #533a71 40px);
+  transform: rotateX(40deg);
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+
+
+
+
+
+
+
+
+
