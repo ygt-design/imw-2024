@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
+  	<meta charset="utf-8">
+    <title>P1: Process</title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * { /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 100px; /* Add spacing around the entire page */ 
+            font-size: 12px; /* Setting baseline font size */ 
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+        figcaption {
+            font-size: 1.25em;
+        }
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2, p, figure, figcaption {
+            margin-bottom: 40px;
+        }
+        img {
+            margin-bottom: 10px;
+        }
+        .process-template {
+            width: 40%; /* Set the width of the template to 60% of the viewport. */
+            margin: auto; /* Center align the template by adding auto margins to the left and right */
+        }
+        .title {
+            margin-bottom: 100px; /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+            .process-template {
+                width: 100%;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="process-template">
+        <!-- Start of title -->
+        <div class="title">
+            <h1>Project 1: Storybook Process</h1>
+        </div>
+        <!-- End of title -->
+        <!-- Start of content -->
+        <div class="content">
+            <!-- Start of a section -->
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>
+                    Going into this project, I chose to go off of the prompt about daydreaming. Inspired by my mouse pad and the doodle I made for the IMW page, I decided to make the character a Shiba Inu. I'm new to coding, so I wanted to keep the imagery simple, so that I could focus on learning how to make forms. The Shiba Inu is on a mission to become "stylish," so you must help it navigate to the boutique and choose an accessory for it. 
+                </p>
+                <figure>
+                    <img src="img/IMG_0627.jpeg" alt="Katherine Doodle" width="100%">
+                    <figcaption>My doodle for the Interactive Media: Web class website</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/finalShiba.jpg" alt="Shiba Inu CSS Sketch" width="100%">
+                    <figcaption>Rendered Shiba Inu in CSS</figcaption>
+                  </figure>
+            </div>
+            <!-- End of a section -->
+
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>Storyboard</h2>
+                <p>
+                    The first iteration of this project, shows my day dream of living in a penthouse in a big city. However, the storyboard I created was not as interactive as I wanted and would not induce more intuitive actions from the user. 
+                </p>
+                <figure>
+                    <img src="img/IMG_0731.jpeg" alt="First Storyboard" width="100%">
+                    <figcaption>First storyboard depicting a Shiba Inu day dreaming about living in a penthouse.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/IMG_0732.jpeg" alt="Shape sketches" width="100%">
+                    <figcaption>Sketching things out, trying to imagine the shapes will take to render.</figcaption>
+                </figure>
+                <p>
+                    Eventually, I decided to simplify things because drawing a city seemed too complicated for my current skill level. I then changed my idea from living in a penthouse to shopping, to simulate the dress up games I played as I child (shoutout to barbie.com!). This allowed me to make a more simple approach while focusing on learning the syntax to improve my CSS and HTML knowledge.
+                </p>
+                <figure>
+                    <img src="img/IMG_0733.jpeg" alt="Shape sketches" width="100%">
+                    <figcaption>Final storyboard sketch</figcaption>
+                </figure>
+            </div>
+                 <!-- End of a section -->
+                
+                <!-- Start of a section -->
+            <div class="section">
+                <h2>Inspiration and Code</h2>
+                <p>
+                    Despite my sentiment of not making this project too complicated, I did not realize how complicated it would be to draw a dog in CSS, so I referenced code for a corgi drawing I found on Code Pen. Using this code and altering it to turn the corgi into a shiba inu helped me learn layering and positioning in CSS and HTML. As I progressed throughout the project, I became more comfortable with writing my own code.
+                </p>
+                <figure>
+                  <img src="img/corgi.jpg" alt="Dev.to Corgi" width="100%">
+                  <figcaption>Rendering of the original Corgi code</figcaption>
+                </figure>
+                <p>
+                    Another difficult element to draw was the boutique. I searched for vector and flat illustrations so that it would be easier to visualize the shapes within. I ended up using an illustration of a coffee shop but deviated a bit from it's original aesthetic to fit my own.
+                </p>
+                <figure>
+                    <img src="img/coffeeShop.jpg" alt="Coffe Shop Reference" width="100%">
+                    <figcaption>Coffee shop vector illustration by larafields on 123RF.com </figcaption>
+                </figure>
+
+                <p>
+                    While coding, there was quite a few moments where I had to trouble shoot my code. Often times it was just forgetting what I named an element or not listing it in my HTML file. To check out problematic areas, I used inspect element on my browser.
+                </p>
+                <figure>
+                    <img src="img/position.jpg" alt="Coffe Shop Reference" width="100%">
+                    <figcaption>Figuring out "position" in CSS </figcaption>
+                </figure>
+            </div>
+            <!-- End of a section -->
+
+            <!-- The Final -->
+            <div class="section">
+                <h2>The Final & Reflection</h2>
+                <p>
+                    The final product of this project is a game-like story where your choice will determine your ending. It is a simple storyline but I learned a lot from the process.
+                </p>
+                <p>
+                    My biggest takeaways from this is that my current process of writing code is not so proficient and that when there is a will there is a way. While looking at other people's codes and while coding, I realized that there are easier ways to expedite writing the code so that it is not too redundant. Going forward, I want to familiarize myself with these shortcuts so that I become more efficient. 
+                </p>
+                <p>
+                     Overall, I am satisfied with what I created, I learned a lot about the possibilities of drawing in CSS and knowing that there is even more beyond what I currently know is an exciting thought. While I sometimes did get frustrated troubleshooting, I found the process of creating this CSS HTML storybook engaging. 
+                </p>
+            </div>
+        </div>
+        <!-- End of content -->
+    </div>
+  </body>
+</html>
