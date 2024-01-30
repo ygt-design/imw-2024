@@ -1,0 +1,41 @@
+body {
+    background-color: #d4d1f5;
+}
+
+/* PAINTING ONE PROPERTIES */
+.painting-1 {
+    display: grid;
+    width: 600px;
+    height: 600px;
+
+    border: 1px solid black; 
+    /* for testing */
+
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+.cream {
+    background-color: #FCF9F2;
+}
+
+.red {
+    background-color: #EE4C3D;
+}
+
+.blue {
+    background-color: #4299C7;
+}
+
+.yellow {
+    background-color: #FDE105;
+}
+
+.border-right {
+    border-right: 20px solid #4A4146;
+}
+
+.border-bottom {
+    border-bottom: 20px solid #4A4146;
+}
+

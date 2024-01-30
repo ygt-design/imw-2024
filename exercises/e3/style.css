@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(180, 186, 192);
+}
+
+
+/*ADOBE FONT */
+/* jump down */
+.adobe-font {
+    font-family: "junegull", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    &:hover {
+        color: greenyellow;
+        transform: translateY(20px)
+    }
+}
+
+
+/* GOOGLE FONT */
+.google-font {
+    font-family: 'Bebas Neue', monospace, sans-serif;
+    
+}
+/* slide and shrink */
+.shrink { 
+    transition: all 1s ease-in-out; 
+    font-family: 'Bebas Neue', monospace, sans-serif;
+}
+    
+.shrink:hover { 
+    transform: scale(0.5); 
+    color: red;
+}
+
+
+/* METAFLOP FONT */
+@font-face {
+    font-family: 'bespoke';
+    src: url('fonts/Bespoke-2wMLT9IG-8_webfont 2/Bespoke-2wMLT9IG-8.eot');
+    src: url('fonts/Bespoke-2wMLT9IG-8_webfont 2/Bespoke-2wMLT9IG-8.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bespoke-2wMLT9IG-8_webfont 2/Bespoke-2wMLT9IG-8.woff') format('woff'),
+       url('fonts/Bespoke-2wMLT9IG-8_webfont 2/Bespoke-2wMLT9IG-8.ttf') format('truetype'),
+       url('fonts/Bespoke-2wMLT9IG-8_webfont 2/Bespoke-2wMLT9IG-8.svg#Bespoke-2wMLT9IG-8') format('svg');
+  }
+
+/* vanishing text */
+.self-hosted {
+    font-family: 'bespoke', sans-serif;
+    transition:1s;
+
+    &:hover {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-right {
+    to {
+        transform: translateX(0)
+    }
+    from {
+        transform: translateX(100px)
+    }
+}
+
+
+

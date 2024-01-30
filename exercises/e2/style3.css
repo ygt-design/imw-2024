@@ -1,0 +1,117 @@
+body {
+    background-color: #d4d1f5;
+}
+
+/* PAINTING THREE PROPERTIES */
+.painting-3 {
+    display: grid;
+    width: 600px;
+    height: 600px;
+
+    border: 1px solid black; 
+
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+/* SQUARES */
+.brown {
+    background-color: #442C21;
+}
+
+.terracotta {
+    background-color: #A04C33;
+}
+
+.sun {
+    background-color: #E1B758;
+}
+
+.lightGreen {
+    background-color: #C5C387;
+}
+
+.midGreen {
+    background-color: #4E7545;
+}
+
+.darkGreen {
+    background-color: #505D32;
+}
+
+.midYellow {
+    background-color: #E9BB67;
+}
+
+.darkOrange {
+    background-color: #C8633E;
+}
+
+.coffee {
+    background-color: #34291d;
+}
+
+.lightYellow {
+    background-color: #E8CA76;
+}
+
+.lime {
+    background-color: #829D4E;
+}
+
+.tea {
+    background-color: #9d7a59;
+}
+
+.lightOrange {
+    background-color: #d2804e;
+}
+
+.chocolate {
+    background-color: #6E3828;
+}
+
+.charcoal {
+    background-color: #2f3026;
+}
+
+.bubbleGreen {
+    background-color: #8C9076;
+}
+
+.bubbleOrange {
+    background-color: #c07a50;
+}
+
+.bubbleBlack{
+    background-color: #545a4a;
+}
+
+/* LINES */
+.border-black {
+    border-top: 10px solid #2f3026;
+}
+
+.border-brown {
+    border-top: 10px solid #6E3828;
+}
+
+.brown-bottom {
+    border-bottom: 10px solid #6E3828;
+}
+
+.border-green {
+    border-top: 20px solid #4E7545;
+}
+
+.border-orange {
+    border-top: 20px solid #C8633E;
+}
+
+.border-yellow {
+    border-top: 20px solid #E1B758;
+}
+
+.border-lime {
+    border-bottom: 20px solid #829D4E; 
+}
