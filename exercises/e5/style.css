@@ -1,0 +1,28 @@
+body {
+    /* background-color: yellow; */
+    background-image: url(happiShiba.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 10vw;
+}
+
+/* doge judging */
+@media (max-width: 900px) {
+    body {
+        background-image: url(doge.jpg);
+
+    }
+}
+
+/* happy shiba w/ yellow background */
+@media (max-width: 750px) {
+    body {
+        background-image: url(happy.jpg);
+
+    }
+}
