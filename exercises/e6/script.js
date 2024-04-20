@@ -8,11 +8,11 @@ const blueCircle = document.getElementById("blue")
 let interactionContainer = document.getElementById("interactionContainer")
 
 greenCircle.addEventListener("click", function () {
-    console.log("interaction container")
     interactionContainer.style.backgroundColor = "lightgreen"
 })
 
 pinkCircle.addEventListener("click", function () {
+    console.log("pink button");
     interactionContainer.style.backgroundColor = "plum"
 })
 

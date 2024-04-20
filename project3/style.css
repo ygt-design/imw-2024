@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/project3/images/windows\ bg.jpeg)
+}
+
+/* icons */
+.computer {
+    position: absolute;
+    left: 1190px;
+    top: 200px
+}
+
+.mail {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+.file {
+    position: absolute;
+    left: 700px;
+    top: 450px;
+}
+
+.world {
+    position: absolute;
+    left: 410px;
+    top: 300px;
+}
+
+.cd {
+    position: absolute;
+    left: 850px;
+    top: 100px;
+}
+
+.magnify {
+    position: absolute;
+    left: 150px;
+    top: 550px;
+}
