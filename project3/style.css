@@ -7,11 +7,16 @@ body {
     background-image: url(/project3/images/windows\ bg.jpeg)
 }
 
-/* icons */
+.clickables{
+    cursor: pointer;
+    opacity: 0;
+}
+
 .computer {
     position: absolute;
     left: 1190px;
-    top: 200px
+    top: 200px;
+    opacity: 1;
 }
 
 .mail {
@@ -42,4 +47,67 @@ body {
     position: absolute;
     left: 150px;
     top: 550px;
+}
+
+/* appearing divs */
+
+.appear{
+    position: absolute;
+    display: none;
+}
+
+.computer-appear{
+    top: 5vh;
+    right: 2vw;
+    width: 10vw;   
+    height: 10vh;
+    background-color: red;
+    background-image: url("");
+    background-size: cover;
+}
+
+.mail-appear{
+    top: 10vh;
+    right: 10vw;
+    width: 20vw;
+    height: 35vh;
+    background-color: green;
+    background-image: url("");
+    background-size: cover;
+}
+
+.file-appear{
+    top: 50vh;
+    right: 10vw;
+    width: 10vw;
+    height: 50vh;
+    background-color: blue;
+    background-image: url("");
+    background-size: cover;
+}
+
+.world-appear{
+    width: 20vw;
+    height: 20vh;
+    bottom: 10vh;
+    left: 50vw;
+    background-color: greenyellow;
+    background-image: url("./images/world.png");
+    background-size: cover;
+} 
+
+.cd-appear{
+    width: 10vw;
+    aspect-ratio: 1;
+    background-color: magenta;
+    background-image: url("");
+    background-size: cover;
+} 
+
+.magnify-appear{
+    width: 20vw;
+    height: 20vh;
+    background-color: yellow;
+    left: 0;
+    bottom: 0;
 }
